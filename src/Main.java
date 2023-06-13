@@ -17,7 +17,7 @@ public class Main extends ListFiles {
             }catch(Exception e){
                 System.out.println("Enter a valid integer");
             }
-            switch (aux){
+            switch(aux){
                 case 3:
                     System.out.println("GoodBye");
                     System.exit(0);
