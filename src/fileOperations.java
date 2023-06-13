@@ -24,6 +24,14 @@ public class fileOperations  {
             System.out.println("File Doesn't exist");
         }
     }
+    void SearchFiles(String Fname){
+        File F= new File(f1,Fname);
+        if(F.exists()){
+            System.out.println("File Exists");
+        }else{
+            System.out.println("File doesn't exists");
+        }
+    }
     public void fileOps() {
         Scanner sc= new Scanner(System.in);
         Integer aux=0;
@@ -42,7 +50,9 @@ public class fileOperations  {
                 case 4:
                     break;
                 case 3:
-                    System.out.println("Search Function Selected");
+                    System.out.println("Enter the file name");
+                    Fname=sc.nextLine();
+                    SearchFiles(Fname);
                     break;
                 case 2:
                     System.out.println("Enter the file name");
