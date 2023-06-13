@@ -22,7 +22,8 @@ public class Main extends ListFiles {
                     System.out.println("GoodBye");
                     System.exit(0);
                 case 2:
-                    System.out.println("File operations menu selected");
+                    fileOperations fp= new fileOperations();
+                    fp.fileOps();
                     break;
                 case 1:
                     Listfiles();
